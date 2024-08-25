@@ -15,7 +15,7 @@ st.set_page_config(
 
 # Load the trained machine learning model
 with open('Prediction.pkl', 'rb') as f:
-    xgb = pickle.load(f)
+    xgb = pickle.load
 
 def predict(Open,Close,High,Low):
     input_data = np.array([[Open,Close,High,Low]])
