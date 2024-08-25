@@ -2,7 +2,6 @@ import numpy as np
 import pandas as pd 
 import pickle 
 import streamlit as st
-from xgboost import XGBRegressor 
 
 st.set_page_config(
    page_title=" Prediction",
