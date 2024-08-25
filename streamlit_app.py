@@ -9,7 +9,6 @@ st.set_page_config(
    initial_sidebar_state="expanded")
 
 # Load the trained machine learning model
-model = XGBRegressor ()
 model.load_model("Prediction")
 
 def predict(Open,Close,High,Low):
