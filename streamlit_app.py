@@ -39,13 +39,13 @@ def main():
     sub = car.form_submit_button('Predict')
 
     if sub:
-        with st.spinner(f'Processing Wait a sec...{name} '):
+        with st.spinner(f'Processing Wait a sec... '):
             time.sleep(10)
 
 
         st.divider()
         
-        #st.error(f'Good to See You {name}')
+        #st.error(f'Good to See You ')
         
         st.subheader("Prediction Report")
         
