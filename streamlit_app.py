@@ -27,7 +27,6 @@ def main():
 
     # Title of The WebPage
     st.title('Machine Learning Prediction')
-    st.warning("warning")
 
     #Taking Inputs From The User....
     car = st.form('my_car') 
