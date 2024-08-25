@@ -50,7 +50,6 @@ def main():
         st.subheader("Prediction Report")
         
         code_snippet = f"""
-        Good To See You {name}
         Open:   {Open}
         Close :   {Close}
         High:   {High}
