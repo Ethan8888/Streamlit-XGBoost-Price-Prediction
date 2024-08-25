@@ -36,13 +36,14 @@ def main():
     st.warning("warning")
 
     #Taking Inputs From The User....
-    sub = box.form_submit_button('Predict')
-    Open = box.number_input("Enter:",max_value=4201.4, min_value=2211.8, step=1.0)
-    Close = box.number_input('Enter:',max_value=4212.9, min_value=2212.7, step=1.0)
-    High = box.number_input('Enter:',max_value=4244.7, min_value=2223.2, step=1.0)
-    Low = box.number_input('Enter:',max_value=4173.0, min_value=2203.4, step=1.0)
+    car = st.form('my_car') 
+    sub = car.form_submit_button('Predict')
+    Open = car.number_input("Enter:",max_value=4201.4, min_value=2211.8, step=1.0)
+    Close = car.number_input('Enter:',max_value=4212.9, min_value=2212.7, step=1.0)
+    High = car.number_input('Enter:',max_value=4244.7, min_value=2223.2, step=1.0)
+    Low = car.number_input('Enter:',max_value=4173.0, min_value=2203.4, step=1.0)
     result = predict(Open,Close,High,Low)
-    sub = box.form_submit_button('Predict')
+    sub = car.form_submit_button('Predict')
 
     if sub:
         with st.spinner(f'Processing Wait a sec...{name} '):
