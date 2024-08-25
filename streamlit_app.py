@@ -5,11 +5,6 @@ import streamlit as st
 import time
 import os
 
-# Everything is accessible via the st.secrets dict:
-st.write("DB username:", st.secrets["db_username"])
-st.write("DB password:", st.secrets["db_password"])
-st.write("My cool secrets:", st.secrets["my_cool_secrets"]["Streamlit", "Python"])
-
 st.set_page_config(
    page_title="Predictor",
    layout="wide",
