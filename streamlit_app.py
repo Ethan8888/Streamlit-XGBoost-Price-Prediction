@@ -8,7 +8,7 @@ import os
 # Everything is accessible via the st.secrets dict:
 st.write("DB username:", st.secrets["Ethan"])
 st.write("DB password:", st.secrets["12345"])
-st.write("My cool secrets:", st.secrets["Streamlit"]["Python"])
+st.write("My cool secrets:", st.secrets["my_cool_secrets"]["Streamlit", "Python"])
 
 st.set_page_config(
    page_title="Predictor",
