@@ -61,7 +61,5 @@ def main():
         
         st.code(code_snippet, language='python')
 
-
-    footer()
 if __name__ == '__main__':
     main()
